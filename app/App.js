@@ -7,48 +7,49 @@ import MenuScreen from './screens/MenuScreen';
 import OrdersScreen from './screens/OrdersScreen';
 import CartScreen from './screens/CartScreen';
 import LoginScreen from './screens/LoginScreen';
+import Theme from './Theme';
 
 const defaultOptions = ({ navigation }) => (
   {
     headerStyle: {
-      backgroundColor: '#6d9cb5',
+      backgroundColor: Theme.primary.main,
     },
-    headerTintColor: '#fff',
+    headerTintColor: Theme.primary.contrastText,
     headerTitleStyle: {
       fontWeight: 'bold',
     },
     headerTitle: 'OrdersTaker',
     headerRight: (
       <Icon type="font-awesome" name="user-circle" color="white" onPress={() => navigation.navigate('Login')} iconStyle={{ marginRight: 15 }} />
-    )
+    ),
   }
 );
 
 const MenuStack = createStackNavigator(
   {
-    Menu: { screen: MenuScreen }
+    Menu: { screen: MenuScreen },
   },
   {
-    navigationOptions: defaultOptions
-  }
+    navigationOptions: defaultOptions,
+  },
 );
 
 const MenuBundleStack = createStackNavigator(
   {
     Menu: { screen: MenuStack },
-    Login: { screen: LoginScreen }
+    Login: { screen: LoginScreen },
   },
   {
     mode: 'modal',
     headerMode: 'none',
-  }
+  },
 );
 
 const RootStack = createBottomTabNavigator(
   {
     Menu: MenuBundleStack,
     Orders: OrdersScreen,
-    Cart: CartScreen
+    Cart: CartScreen,
   },
   {
     navigationOptions: ({ navigation }) => ({
@@ -69,12 +70,12 @@ const RootStack = createBottomTabNavigator(
             break;
         }
         return iconName;
-      }
+      },
     }),
     tabBarOptions: {
-      activeTintColor: '#6d9cb5'
-    }
-  }
+      activeTintColor: Theme.primary.dark,
+    },
+  },
 );
 
 export const App = () => <RootStack />;
