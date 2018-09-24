@@ -1,9 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
-import { Button } from 'react-native';
+// import { Button } from 'react-native';
+import { Icon } from 'react-native-elements';
 
 import MenuScreen from './screens/MenuScreen';
-import OrderScreen from './screens/OrderScreen';
+import OrdersScreen from './screens/OrdersScreen';
 import CartScreen from './screens/CartScreen';
 import LoginScreen from './screens/LoginScreen';
 
@@ -18,11 +19,7 @@ const defaultOptions = ({ navigation }) => (
     },
     headerTitle: 'OrdersTaker',
     headerRight: (
-      <Button
-        onPress={() => navigation.navigate('Login')}
-        title="Login"
-        color="#CCC"
-      />
+      <Icon type="font-awesome" name="user-circle" color="white" onPress={() => navigation.navigate('Login')} iconStyle={{ marginRight: 15 }} />
     )
   }
 );
@@ -50,30 +47,33 @@ const MenuBundleStack = createStackNavigator(
 const RootStack = createBottomTabNavigator(
   {
     Menu: MenuBundleStack,
-    Order: OrderScreen,
+    Orders: OrdersScreen,
     Cart: CartScreen
   },
   {
-    initialRouterName: 'Menu'
-    // navigationOptions: ({ navigation }) => (
-    //   {
-    //     headerStyle: {
-    //       backgroundColor: '#6d9cb5',
-    //     },
-    //     headerTintColor: '#fff',
-    //     headerTitleStyle: {
-    //       fontWeight: 'bold',
-    //     },
-    //     headerTitle: 'OrdersTaker',
-    //     headerRight: (
-    //       <Button
-    //         onPress={() => navigation.navigate('LoginModal')}
-    //         title="Login"
-    //         color="#CCC"
-    //       />
-    //     )
-    //   }
-    // )
+    navigationOptions: ({ navigation }) => ({
+      tabBarIcon: ({ focused, tintColor }) => {
+        const { routeName } = navigation.state;
+        let iconName;
+        switch (routeName) {
+          case 'Menu':
+            iconName = <Icon type="entypo" name="open-book" color={tintColor} />;
+            break;
+          case 'Orders':
+            iconName = <Icon type="entypo" name="list" color={tintColor} />;
+            break;
+          case 'Cart':
+            iconName = <Icon type="entypo" name="shopping-cart" color={tintColor} />;
+            break;
+          default:
+            break;
+        }
+        return iconName;
+      }
+    }),
+    tabBarOptions: {
+      activeTintColor: '#6d9cb5'
+    }
   }
 );
 

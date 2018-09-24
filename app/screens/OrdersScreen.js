@@ -20,10 +20,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export const OrderScreen = () => (
+export const OrdersScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.welcome}>Welcome to the Order Screen!</Text>
+    <Text style={styles.welcome}>Welcome to the Orders Screen!</Text>
   </View>
 );
 
-export default OrderScreen;
+export default OrdersScreen;
