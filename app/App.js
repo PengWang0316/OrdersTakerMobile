@@ -1,33 +1,72 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
+import { Button } from 'react-native';
 
-type Props = {};
+import MenuScreen from './screens/MenuScreen';
+import OrderScreen from './screens/OrderScreen';
+import CartScreen from './screens/CartScreen';
+import LoginScreen from './screens/LoginScreen';
 
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-      </View>
-    );
+const defaultOptions = ({ navigation }) => (
+  {
+    headerStyle: {
+      backgroundColor: '#6d9cb5',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+    headerTitle: 'OrdersTaker',
+    headerRight: (
+      <Button
+        onPress={() => navigation.navigate('Login')}
+        title="Login"
+        color="#CCC"
+      />
+    )
   }
-}
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+const MenuStack = createStackNavigator(
+  {
+    Menu: MenuScreen,
+    Login: LoginScreen
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  {
+    navigationOptions: defaultOptions
+  }
+);
+
+const RootStack = createBottomTabNavigator(
+  {
+    Menu: MenuStack,
+    Order: OrderScreen,
+    Cart: CartScreen
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+  {
+    initialRouterName: 'Menu',
+    // navigationOptions: ({ navigation }) => (
+    //   {
+    //     headerStyle: {
+    //       backgroundColor: '#6d9cb5',
+    //     },
+    //     headerTintColor: '#fff',
+    //     headerTitleStyle: {
+    //       fontWeight: 'bold',
+    //     },
+    //     headerTitle: 'OrdersTaker',
+    //     headerRight: (
+    //       <Button
+    //         onPress={() => navigation.navigate('LoginModal')}
+    //         title="Login"
+    //         color="#CCC"
+    //       />
+    //     )
+    //   }
+    // )
+  }
+);
+
+export const App = () => <RootStack />;
+
+export default App;
