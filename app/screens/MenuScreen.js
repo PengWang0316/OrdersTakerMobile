@@ -25,5 +25,4 @@ export const MenuScreen = () => (
     <Text style={styles.welcome}>Welcome to the Menu Screen!</Text>
   </View>
 );
-
 export default MenuScreen;

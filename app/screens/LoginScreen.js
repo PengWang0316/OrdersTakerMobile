@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import {
+  StyleSheet, Text, View, Button
+} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -30,4 +32,5 @@ export const LoginScreen = ({ navigation }: Props) => (
     <Button onPress={() => navigation.goBack()} title="Go Back" />
   </View>
 );
+
 export default LoginScreen;

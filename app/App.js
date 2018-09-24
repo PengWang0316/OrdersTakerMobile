@@ -29,22 +29,32 @@ const defaultOptions = ({ navigation }) => (
 
 const MenuStack = createStackNavigator(
   {
-    Menu: MenuScreen,
-    Login: LoginScreen
+    Menu: { screen: MenuScreen }
   },
   {
     navigationOptions: defaultOptions
   }
 );
 
+const MenuBundleStack = createStackNavigator(
+  {
+    Menu: { screen: MenuStack },
+    Login: { screen: LoginScreen }
+  },
+  {
+    mode: 'modal',
+    headerMode: 'none',
+  }
+);
+
 const RootStack = createBottomTabNavigator(
   {
-    Menu: MenuStack,
+    Menu: MenuBundleStack,
     Order: OrderScreen,
     Cart: CartScreen
   },
   {
-    initialRouterName: 'Menu',
+    initialRouterName: 'Menu'
     // navigationOptions: ({ navigation }) => (
     //   {
     //     headerStyle: {
