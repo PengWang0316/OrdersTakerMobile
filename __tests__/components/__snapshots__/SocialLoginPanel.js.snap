@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialLoginPanel Test Snapshot 1`] = `
+Array [
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#6d9cb5",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 15,
+        }
+      }
+    >
+      Social Login
+    </Text>
+  </View>,
+  <View>
+    <View
+      style={
+        Array [
+          undefined,
+          false,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#2089dc",
+                "borderRadius": 3,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
+              Array [
+                Object {
+                  "borderRadius": 15,
+                  "marginBottom": 15,
+                },
+                Object {
+                  "backgroundColor": "#3B5998",
+                },
+              ],
+              false,
+              false,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <View
+              style={
+                Array [
+                  false,
+                  false,
+                  false,
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+              underlayColor="white"
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#fff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                      },
+                      undefined,
+                    ],
+                    Object {
+                      "fontFamily": "FontAwesome",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "white",
+                  "fontSize": 18,
+                  "padding": 8,
+                  "textAlign": "center",
+                },
+                undefined,
+                false,
+                false,
+              ]
+            }
+          >
+            Sign in with Facebook
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>,
+  <View>
+    <View
+      style={
+        Array [
+          undefined,
+          false,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#2089dc",
+                "borderRadius": 3,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
+              Array [
+                Object {
+                  "borderRadius": 15,
+                  "marginBottom": 15,
+                },
+                Object {
+                  "backgroundColor": "#dd4b39",
+                },
+              ],
+              false,
+              false,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <View
+              style={
+                Array [
+                  false,
+                  false,
+                  false,
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+              underlayColor="white"
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#fff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                      },
+                      undefined,
+                    ],
+                    Object {
+                      "fontFamily": "Entypo",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "white",
+                  "fontSize": 18,
+                  "padding": 8,
+                  "textAlign": "center",
+                },
+                undefined,
+                false,
+                false,
+              ]
+            }
+          >
+            Sign in with Google
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>,
+]
+`;
