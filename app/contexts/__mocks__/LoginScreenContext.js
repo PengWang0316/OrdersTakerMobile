@@ -1,4 +1,4 @@
-import context from '../LoginScreenContextHelp';
+import context from '../LoginScreenContextTestHelper';
 
 const Context = ({
   Consumer: props => props.children(context),
