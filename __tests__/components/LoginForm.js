@@ -3,9 +3,11 @@ import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 
 import { LoginForm } from '../../app/components/LoginForm/LoginForm';
+// import context from '../../app/contexts/LoginScreenContextTestHelper';
 
 jest.mock('Text', () => 'Text');
 jest.mock('View', () => 'View');
+// jest.mock('../../app/contexts/LoginScreenContext');
 // jest.mock('Input', () => 'Input');
 // jest.mock('Icon', () => 'Icon');
 // jest.mock('Button', () => 'Button');

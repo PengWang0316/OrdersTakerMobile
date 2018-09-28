@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Input, Icon, Button } from 'react-native-elements';
 
 import { loginWithPassword, emptyUser } from '../../actions/UserActions';
+// import LoginScreenContext from '../../contexts/LoginScreenContext';
 import styles from './Styles';
 
 type Props = {
@@ -19,7 +20,6 @@ type States = {
   isReady: boolean,
   isError: boolean,
   loginWithPassword: Function,
-  handleSnackbarUpdate: Function,
   user: Object,
 };
 
@@ -30,6 +30,7 @@ const COLOR_ERROR = '#ff1744';
  * The login form component.
  */
 export class LoginForm extends Component<Props, States> {
+
   state = {
     username: '',
     password: '',
@@ -97,6 +98,7 @@ export class LoginForm extends Component<Props, States> {
 
     return (
       <Fragment>
+
         <View>
           <Text style={styles.title}>Username Login</Text>
         </View>

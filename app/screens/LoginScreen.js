@@ -1,40 +1,10 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet, Text, View,
-} from 'react-native';
-import { Divider } from 'react-native-elements';
+
 import SnackBar from '@kevinwang0316/react-native-snackbar-component';
 
-
-import Theme from '../Theme';
 import SafeAreaScreen from './SafeAreaScreen';
-import LoginForm from '../components/LoginForm/LoginForm';
-import SocialLoginPanel from '../components/SocialLoginPanel';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: Theme.panelBackgroundColor,
-  },
-  internalContainer: {
-    width: '75%',
-  },
-  deviderView: {
-    flex: 1,
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    flexDirection: 'row',
-    marginTop: 30,
-    marginBottom: 30,
-  },
-  devider: {
-    backgroundColor: Theme.primary.main,
-    height: 1,
-    width: '38%',
-  },
-});
+import LoginPanel from '../components/LoginPanel';
+// import LoginScreenContext from '../contexts/LoginScreenContext';
 
 type Props = {
   navigation: Object
@@ -44,7 +14,8 @@ type States = {
   isShowSnackbar: boolean,
   snackbarMessage: string,
   snackbarBgColor: string,
-}
+  isShowRegisterPanel: boolean,
+};
 
 const AUTO_HIDDING_TIME = 1500;
 
@@ -56,6 +27,7 @@ export class LoginScreen extends Component<Props, States> {
     isShowSnackbar: false,
     snackbarMessage: '',
     snackbarBgColor: '',
+    isShowRegisterPanel: false,
   };
 
   /**
@@ -73,20 +45,13 @@ export class LoginScreen extends Component<Props, States> {
    * @return {jsx} Return jsx.
    */
   render() {
-    const { isShowSnackbar, snackbarMessage, snackbarBgColor } = this.state;
+    const {
+      isShowSnackbar, snackbarMessage, snackbarBgColor, isShowRegisterPanel,
+    } = this.state;
     return (
       <SafeAreaScreen>
-        <View style={styles.internalContainer}>
-          <SocialLoginPanel />
-
-          <View style={styles.deviderView}>
-            <Divider style={styles.devider} />
-            <Text style={styles.title}>or</Text>
-            <Divider style={styles.devider} />
-          </View>
-
-          <LoginForm handleSnackbarUpdate={this.snackbarUpdateCallback} />
-        </View>
+        {/* <LoginScreenContext.Provider value={{ handleSnackbarUpdate: this.snackbarUpdateCallback }}> */}
+        {!isShowRegisterPanel && <LoginPanel handleSnackbarUpdate={this.snackbarUpdateCallback} />}
         {/* <Button onPress={() => navigation.goBack()} title="Go Back" /> */}
         <SnackBar
           visible={isShowSnackbar}
@@ -94,6 +59,7 @@ export class LoginScreen extends Component<Props, States> {
           backgroundColor={snackbarBgColor}
           autoHidingTime={AUTO_HIDDING_TIME}
         />
+        {/* </LoginScreenContext.Provider> */}
       </SafeAreaScreen>
     );
   }
