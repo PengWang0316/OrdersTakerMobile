@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm Snapshot 1`] = `
+Array [
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#6d9cb5",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 15,
+        }
+      }
+    >
+      Username Login
+    </Text>
+  </View>,
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "width": "90%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#86939e",
+            "flexDirection": "row",
+            "transform": Array [
+              Object {
+                "translateX": 0,
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 40,
+                "justifyContent": "center",
+              },
+              Object {
+                "marginLeft": 15,
+              },
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <View
+              style={
+                Array [
+                  false,
+                  false,
+                  false,
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+              underlayColor="white"
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "gray",
+                      "fontSize": 18,
+                    },
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                      },
+                      undefined,
+                    ],
+                    Object {
+                      "fontFamily": "FontAwesome",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+        <TextInput
+          allowFontScaling={true}
+          onChangeText={[Function]}
+          placeholder="Username"
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "black",
+                "flex": 1,
+                "fontSize": 18,
+                "height": 40,
+                "marginLeft": 10,
+              },
+              undefined,
+            ]
+          }
+          underlineColorAndroid="transparent"
+          value=""
+        />
+      </View>
+    </View>
+  </View>,
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "width": "90%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottomWidth": 1,
+            "borderColor": "#86939e",
+            "flexDirection": "row",
+            "transform": Array [
+              Object {
+                "translateX": 0,
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 40,
+                "justifyContent": "center",
+              },
+              Object {
+                "marginLeft": 15,
+              },
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <View
+              style={
+                Array [
+                  false,
+                  false,
+                  false,
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+              underlayColor="white"
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "gray",
+                      "fontSize": 18,
+                    },
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                      },
+                      undefined,
+                    ],
+                    Object {
+                      "fontFamily": "Feather",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+        <TextInput
+          allowFontScaling={true}
+          onChangeText={[Function]}
+          placeholder="Password"
+          secureTextEntry={true}
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "black",
+                "flex": 1,
+                "fontSize": 18,
+                "height": 40,
+                "marginLeft": 10,
+              },
+              undefined,
+            ]
+          }
+          underlineColorAndroid="transparent"
+          value=""
+        />
+      </View>
+    </View>
+  </View>,
+  <View
+    style={
+      Object {
+        "marginTop": 30,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          undefined,
+          false,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#2089dc",
+                "borderRadius": 3,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
+              Object {
+                "backgroundColor": "#6d9cb5",
+                "borderRadius": 15,
+              },
+              Object {
+                "backgroundColor": "#D1D5D8",
+              },
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "white",
+                  "fontSize": 18,
+                  "padding": 8,
+                  "textAlign": "center",
+                },
+                undefined,
+                Object {
+                  "color": "#F3F4F5",
+                },
+                undefined,
+              ]
+            }
+          >
+            LOGIN
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>,
+]
+`;
