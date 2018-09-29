@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPanel Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "width": "75%",
+    }
+  }
+>
+  <SocialLoginPanel />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "marginBottom": 30,
+        "marginTop": 30,
+      }
+    }
+  >
+    Divider
+    <Text>
+      or
+    </Text>
+    Divider
+  </View>
+  <LoginForm />
+</View>
+`;
