@@ -3,7 +3,7 @@ import { StatusBar } from 'react-native';
 
 import Theme from '../../Theme';
 
-const DarkerStatusBar = () => (
+export const DarkerStatusBar = () => (
   <StatusBar
     barStyle="light-content"
     backgroundColor={Theme.primary.dark}

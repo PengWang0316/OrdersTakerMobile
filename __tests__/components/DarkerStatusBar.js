@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import DarkerStatusBar from '../../app/components/DarkerStatusBar';
+import { DarkerStatusBar } from '../../app/components/DarkerStatusBar/DarkerStatusBar';
 
 // jest.mock('react-native', () => ({ StatusBar: 'StatusBar' }));
 jest.mock('StatusBar', () => 'StatusBar');
