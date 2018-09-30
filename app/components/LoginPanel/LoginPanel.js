@@ -11,7 +11,7 @@ type Props = { handleSnackbarUpdate: Function };
 export const LoginPanel = ({ handleSnackbarUpdat }: Props) => (
   <View style={styles.internalContainer}>
     <SocialLoginPanel />
-{console.log(LoginForm)}
+
     <View style={styles.deviderView}>
       <Divider style={styles.devider} />
       <Text style={styles.title}>or</Text>
