@@ -12,15 +12,5 @@ jest.mock('../../app/screens/SafeAreaScreen', () => 'SafeAreaScreen');
 describe('LoginScreen', () => {
   const getShallowComponent = () => shallow(<LoginScreen />);
 
-  test('Initial states', () => {
-    const component = getShallowComponent();
-    const {
-      isShowSnackbar, snackbarMessage, snackbarBgColor, isShowRegisterPanel,
-    } = component.state();
-
-    expect(isShowSnackbar).toBe(false);
-    expect(isShowRegisterPanel).toBe(false);
-    expect(snackbarMessage).toBe('');
-    expect(snackbarBgColor).toBe('');
-  });
+  test('Snapshot with isShowRegisterPanel false', () => expect(renderer.create(<LoginScreen />).toJSON()).toMatchSnapshot());
 });
