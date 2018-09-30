@@ -10,4 +10,5 @@ jest.mock('../components/LoginForm', () => 'LoginForm');
 jest.mock('../components/SocialLoginPanel', () => 'SocialLoginPanel');
 jest.mock('../components/LoginPanel', () => 'LoginPanel');
 jest.mock('../components/RegisterPanel', () => 'RegisterPanel');
-jest.mock('../screens/SafeAreaScreen', () => 'SafeAreaScreen');
+jest.mock('../components/DarkerStatusBar', () => 'DarkerStatusBar');
+// jest.mock('../screens/SafeAreaScreen', () => 'SafeAreaScreen');
