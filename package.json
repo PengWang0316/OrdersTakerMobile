@@ -20,6 +20,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.1.2",
     "axios-mock-adapter": "^1.15.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
