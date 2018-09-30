@@ -1,28 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+
+import SafeAreaScreen from './SafeAreaScreen';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
+  title: {
     fontSize: 20,
-    textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
 export const MenuScreen = () => (
-  <View style={styles.container}>
+  <SafeAreaScreen>
     <Text style={styles.welcome}>Welcome to the Menu Screen!</Text>
-  </View>
+  </SafeAreaScreen>
 );
 export default MenuScreen;
