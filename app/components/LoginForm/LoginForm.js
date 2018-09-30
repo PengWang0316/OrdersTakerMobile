@@ -30,7 +30,6 @@ const COLOR_ERROR = '#ff1744';
  * The login form component.
  */
 export class LoginForm extends Component<Props, States> {
-
   state = {
     username: '',
     password: '',
