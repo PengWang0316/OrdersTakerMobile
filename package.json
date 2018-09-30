@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "testCoverage": "jest --coverage --runInBand",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "dependencies": {
     "@kevinwang0316/react-native-snackbar-component": "^1.1.2",
@@ -26,6 +28,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "23.6.0",
     "babel-plugin-jest-hoist": "^23.2.0",
+    "coveralls": "^3.0.2",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.6.1",
