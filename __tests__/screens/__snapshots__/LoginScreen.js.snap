@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginScreen Snapshot with isShowRegisterPanel false 1`] = `
+<RCTSafeAreaView
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F5FCFF",
+        "flex": 1,
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <DarkerStatusBar />
+  <LoginPanel
+    handleSnackbarUpdate={[Function]}
+  />
+  <View>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "marginTop": 20,
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#9ecde7",
+          }
+        }
+      >
+        Do Not Have An Account? Register One
+      </Text>
+    </View>
+  </View>
+  <Snackbar
+    autoHidingTime={1500}
+    backgroundColor=""
+    textMessage=""
+    visible={false}
+  />
+</RCTSafeAreaView>
+`;
+
+exports[`LoginScreen Snapshot with isShowRegisterPanel true ans isShowSnackbar true 1`] = `
+<RCTSafeAreaView
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F5FCFF",
+        "flex": 1,
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <DarkerStatusBar />
+  <RegisterPanel />
+  <View>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "marginTop": 20,
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#9ecde7",
+          }
+        }
+      >
+        Have An Account Already? Go To Login
+      </Text>
+    </View>
+  </View>
+  <Snackbar
+    autoHidingTime={1500}
+    backgroundColor=""
+    textMessage=""
+    visible={true}
+  />
+</RCTSafeAreaView>
+`;
