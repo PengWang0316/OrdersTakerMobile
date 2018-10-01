@@ -22,9 +22,9 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
     "@babel/runtime": "^7.1.2",
     "axios-mock-adapter": "^1.15.0",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "23.6.0",
     "babel-plugin-jest-hoist": "^23.2.0",
