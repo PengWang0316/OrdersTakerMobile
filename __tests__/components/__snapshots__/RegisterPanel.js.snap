@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterPanel Snapshot 1`] = `
+<View>
+  <Text>
+    Register Panel
+  </Text>
+</View>
+`;
