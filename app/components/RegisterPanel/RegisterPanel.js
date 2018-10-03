@@ -14,6 +14,10 @@ const USERNAME_NOAVALIABLE_MESSAGE = 'The user name laready exsits';
 const PASSWORD_TIP_MESSAGE = 'Passwords should be same';
 const EMAIL_TIP_MESSAGE = 'Wrong email address';
 
+type Props = {
+  registerUser: Function,
+};
+
 type States = {
   username: string,
   password: string,
@@ -32,7 +36,7 @@ type States = {
 /**
  * The Register panel component
  */
-export class RegisterPanel extends Component<null, States> {
+export class RegisterPanel extends Component<Props, States> {
   state = {
     username: '',
     password: '',
@@ -55,7 +59,6 @@ export class RegisterPanel extends Component<null, States> {
    * @return {null} No return.
    */
   handleInputTextChange = (target, value) => this.setState({ [target]: value }, () => {
-
     // Do the validation
     switch (target) {
       case 'username':

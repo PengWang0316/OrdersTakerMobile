@@ -1,9 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RegisterPanel Snapshot 1`] = `
-<View>
-  <Text>
-    Register Panel
-  </Text>
+<View
+  style={
+    Object {
+      "width": "75%",
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#6d9cb5",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 15,
+        }
+      }
+    >
+      Username Login
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    Input
+  </View>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    Input
+  </View>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    Input
+  </View>
+  <View
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    Input
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 30,
+      }
+    }
+  >
+    Button
+  </View>
 </View>
 `;
