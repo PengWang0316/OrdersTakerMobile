@@ -8,9 +8,9 @@ import RegisterPanel from '../components/RegisterPanel';
 import Theme from '../Theme';
 // import LoginScreenContext from '../contexts/LoginScreenContext';
 
-// type Props = {
-//   navigation: Object
-// };
+type Props = {
+  navigation: Object
+};
 
 type States = {
   isShowSnackbar: boolean,
@@ -26,7 +26,7 @@ const LOGIN_TEXT = 'Have An Account Already? Go To Login';
 /**
  * The component that contains login form and register form.
  */
-export class LoginScreen extends Component<null, States> {
+export class LoginScreen extends Component<Props, States> {
   state = {
     isShowSnackbar: false,
     snackbarMessage: '',
@@ -58,12 +58,13 @@ export class LoginScreen extends Component<null, States> {
     const {
       isShowSnackbar, snackbarMessage, snackbarBgColor, isShowRegisterPanel,
     } = this.state;
+    const { navigation } = this.props;
     return (
       <SafeAreaScreen>
         {/* <LoginScreenContext.Provider value={{ handleSnackbarUpdate: this.snackbarUpdateCallback }}> */}
         {!isShowRegisterPanel && <LoginPanel handleSnackbarUpdate={this.snackbarUpdateCallback} />}
         {/* <Button onPress={() => navigation.goBack()} title="Go Back" /> */}
-        {isShowRegisterPanel && <RegisterPanel handleSnackbarUpdate={this.snackbarUpdateCallBack} />}
+        {isShowRegisterPanel && <RegisterPanel handleSnackbarUpdate={this.snackbarUpdateCallBack} navigation={navigation} />}
 
         <View>
           <TouchableOpacity

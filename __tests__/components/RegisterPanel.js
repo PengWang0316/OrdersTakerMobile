@@ -9,6 +9,7 @@ jest.mock('../../app/actions/UserActions', () => ({ checkUsernameAvailable: jest
 describe('RegisterPanel', () => {
   const defaultProps = {
     registerUser: jest.fn(),
+    navigation: { goBack: jest.fn() },
   };
   const getShallowComponent = (props = defaultProps) => shallow(<RegisterPanel {...props} />);
 
@@ -56,6 +57,7 @@ describe('RegisterPanel', () => {
     expect(defaultProps.registerUser).toHaveBeenLastCalledWith({
       username: 'username', password: 'password', email: 'email',
     });
+    expect(defaultProps.navigation.goBack).toHaveBeenCalledTimes(1);
   });
 
   test('handleInputTextChange target username match USERNAME_REGEXP', () => {

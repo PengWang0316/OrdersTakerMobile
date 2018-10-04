@@ -16,6 +16,7 @@ const EMAIL_TIP_MESSAGE = 'Wrong email address';
 
 type Props = {
   registerUser: Function,
+  navigation: Object,
 };
 
 type States = {
@@ -105,9 +106,7 @@ export class RegisterPanel extends Component<Props, States> {
     // If all field is not empty and no error message shows up, set the isReady to true.
     this.setState(({
       username, password, repeatPassword, email, usernameErrorMessage, passwordErrorMessage, emailErrorMessage,
-    }) => {
-      return ({ isReady: !!(username && password && repeatPassword && email) && !(usernameErrorMessage || passwordErrorMessage || emailErrorMessage) });
-    });
+    }) => ({ isReady: !!(username && password && repeatPassword && email) && !(usernameErrorMessage || passwordErrorMessage || emailErrorMessage) }));
   });
 
   /**
@@ -124,6 +123,7 @@ export class RegisterPanel extends Component<Props, States> {
       password: this.state.password,
       email: this.state.email,
     });
+    this.props.navigation.goBack();
   };
 
   /**
