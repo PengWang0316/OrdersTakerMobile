@@ -12,7 +12,7 @@ type Props = {
   loginWithPassword: Function,
   emptyUser: Function,
   handleSnackbarUpdate: Function,
-  naviagtion: Object,
+  navigation: Object,
 };
 
 type States = {
