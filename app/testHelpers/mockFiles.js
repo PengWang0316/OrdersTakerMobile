@@ -3,6 +3,7 @@ jest.mock('react-native-elements', () => ({
   Button: () => 'Button',
   Icon: () => 'Icon',
   Input: () => 'Input',
+  Avatar: () => 'Avatar',
 }));
 jest.mock('@kevinwang0316/react-native-snackbar-component', () => 'Snackbar');
 
