@@ -18,6 +18,7 @@ describe('LoginForm', () => {
     handleSnackbarUpdate: jest.fn(),
     emptyUser: jest.fn(),
     loginWithPassword: jest.fn(),
+    navigation: { goBack: jest.fn() },
   };
   const getShallowComponent = (props = defaultProps) => shallow(<LoginForm {...props} />);
 
@@ -48,6 +49,17 @@ describe('LoginForm', () => {
     expect(mockUpdateFn).toHaveBeenCalledTimes(1);
     expect(mockUpdateFn).toHaveBeenLastCalledWith({ isShowSnackbar: true, snackbarMessage: 'Wrong username or password', snackbarBgColor: '#ff1744' });
     expect(mockEmptyUserFn).toHaveBeenCalledTimes(1);
+  });
+
+  test('getDerivedStateFromProps isSubmitted is true and has user _id', () => {
+    const mockGoBack = jest.fn();
+    const nextProps = {
+      user: { _id: true },
+      navigation: { goBack: mockGoBack },
+    };
+    const prevState = { isSubmitted: true };
+    expect(LoginForm.getDerivedStateFromProps(nextProps, prevState)).toEqual(null);
+    expect(mockGoBack).toHaveBeenCalledTimes(1);
   });
 
   test('handleLoginClick', () => {
