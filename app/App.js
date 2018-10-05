@@ -1,12 +1,17 @@
 import React from 'react';
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
-// import { Button } from 'react-native';
 import { Icon } from 'react-native-elements';
 
+// Tab screens
 import MenuScreen from './screens/MenuScreen';
 import OrdersScreen from './screens/OrdersScreen';
 import CartScreen from './screens/CartScreen';
+
+// Modal screens
 import LoginScreen from './screens/LoginScreen';
+import UserInfoScreen from './screens/UserInfoScreen';
+
+import NavbarUserAvatar from './components/NavbarUserAvatar';
 import Theme from './Theme';
 
 const defaultOptions = ({ navigation }) => (
@@ -19,9 +24,7 @@ const defaultOptions = ({ navigation }) => (
       fontWeight: 'bold',
     },
     headerTitle: 'OrdersTaker',
-    headerRight: (
-      <Icon type="font-awesome" name="user-circle" color="white" onPress={() => navigation.navigate('Login')} iconStyle={{ marginRight: 15 }} />
-    ),
+    headerRight: <NavbarUserAvatar navigation={navigation} />,
   }
 );
 
@@ -38,6 +41,7 @@ const MenuBundleStack = createStackNavigator(
   {
     Menu: { screen: MenuStack },
     Login: { screen: LoginScreen },
+    UserInfo: { screen: UserInfoScreen },
   },
   {
     mode: 'modal',
