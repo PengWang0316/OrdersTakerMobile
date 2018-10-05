@@ -9,7 +9,7 @@ import Theme from '../Theme';
 // import LoginScreenContext from '../contexts/LoginScreenContext';
 
 type Props = {
-  navigation: Object
+  navigation: Object,
 };
 
 type States = {
@@ -62,7 +62,7 @@ export class LoginScreen extends Component<Props, States> {
     return (
       <SafeAreaScreen>
         {/* <LoginScreenContext.Provider value={{ handleSnackbarUpdate: this.snackbarUpdateCallback }}> */}
-        {!isShowRegisterPanel && <LoginPanel handleSnackbarUpdate={this.snackbarUpdateCallback} />}
+        {!isShowRegisterPanel && <LoginPanel handleSnackbarUpdate={this.snackbarUpdateCallback} navigation={navigation} />}
         {/* <Button onPress={() => navigation.goBack()} title="Go Back" /> */}
         {isShowRegisterPanel && <RegisterPanel handleSnackbarUpdate={this.snackbarUpdateCallBack} navigation={navigation} />}
 
