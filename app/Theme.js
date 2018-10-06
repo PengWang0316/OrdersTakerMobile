@@ -12,4 +12,5 @@ export default {
     contrastText: '#fff',
   },
   panelBackgroundColor: '#F5FCFF',
+  dangerousColor: '#ff1744',
 };
