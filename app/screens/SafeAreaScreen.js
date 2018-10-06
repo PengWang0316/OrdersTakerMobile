@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Theme.panelBackgroundColor,
+    width: '100%',
   },
 });
 
