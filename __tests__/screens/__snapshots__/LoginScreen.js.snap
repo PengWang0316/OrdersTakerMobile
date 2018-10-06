@@ -9,6 +9,7 @@ exports[`LoginScreen Snapshot with isShowRegisterPanel false 1`] = `
         "backgroundColor": "#F5FCFF",
         "flex": 1,
         "justifyContent": "center",
+        "width": "100%",
       },
       undefined,
     ]
@@ -64,6 +65,7 @@ exports[`LoginScreen Snapshot with isShowRegisterPanel true ans isShowSnackbar t
         "backgroundColor": "#F5FCFF",
         "flex": 1,
         "justifyContent": "center",
+        "width": "100%",
       },
       undefined,
     ]
