@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfoScreen Snapshot 1`] = `
+<RCTSafeAreaView
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F5FCFF",
+        "flex": 1,
+        "justifyContent": "center",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <DarkerStatusBar />
+  <View
+    style={
+      Object {
+        "marginBottom": 35,
+      }
+    }
+  >
+    Avatar
+  </View>
+  <View
+    style={
+      Object {
+        "marginBottom": 35,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#6d9cb5",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      displayName
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginBottom": 10,
+      }
+    }
+  >
+    Button
+  </View>
+  <View>
+    Button
+  </View>
+</RCTSafeAreaView>
+`;
