@@ -4,6 +4,12 @@ import { shallow } from 'enzyme';
 
 import { UserInfoScreen } from '../../app/screens/UserInfoScreen';
 
+jest.mock('react-native-elements', () => ({
+  Button: () => 'Button',
+  Avatar: () => 'Avatar',
+}));
+jest.mock('../../app/screens/SafeAreaScreen', () => 'SafeAreaScreen');
+
 describe('UserInfoScreen', () => {
   const defaultProps = {
     user: {

@@ -4,6 +4,11 @@ import { shallow } from 'enzyme';
 
 import { NavbarUserAvatar } from '../../app/components/NavbarUserAvatar/NavbarUserAvatar';
 
+jest.mock('react-native-elements', () => ({
+  Avatar: () => 'Avatar',
+  Icon: () => 'Icon',
+}));
+
 describe('NavbarUserAvatar', () => {
   const defaultProps = {
     navigation: {

@@ -4,6 +4,11 @@ import renderer from 'react-test-renderer';
 
 import { RegisterPanel } from '../../app/components/RegisterPanel/RegisterPanel';
 
+jest.mock('react-native-elements', () => ({
+  Button: () => 'Button',
+  Icon: () => 'Icon',
+  Input: () => 'Input',
+}));
 jest.mock('../../app/actions/UserActions', () => ({ checkUsernameAvailable: jest.fn().mockReturnValue(Promise.resolve(true)) }));
 
 describe('RegisterPanel', () => {
@@ -87,7 +92,7 @@ describe('RegisterPanel', () => {
     expect(component.state('username')).toBe('dfdf124_df@');
     expect(component.state('usernameErrorMessage')).toBe(false);
     expect(component.state('isReady')).toBe(true);
-    // expect(UserActions.checkUsernameAvailable).toHaveBeenCalledTimes(1); jest.mock is not hoisted automatically. So, I cannot test this.
+    expect(UserActions.checkUsernameAvailable).toHaveBeenCalledTimes(1);
     component.instance().handleInputTextChange('username', 'dfdf124_df@');
     expect(clearTimeout).toHaveBeenCalledTimes(1);
   });

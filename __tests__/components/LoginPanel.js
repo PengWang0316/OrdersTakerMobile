@@ -3,10 +3,11 @@ import renderer from 'react-test-renderer';
 
 import { LoginPanel } from '../../app/components/LoginPanel/LoginPanel';
 
-// jest.mock('Text', () => 'Text');
-// jest.mock('View', () => 'View');
-// jest.mock('../../app/components/LoginForm', () => 'LoginForm');
-// jest.mock('../../app/components/SocialLoginPanel', () => 'SocialLoginPanel');
+jest.mock('react-native-elements', () => ({
+  Divider: () => 'Divider',
+}));
+jest.mock('../../app/components/SocialLoginPanel', () => 'SocialLoginPanel');
+jest.mock('../../app/components/LoginForm', () => 'LoginForm');
 
 describe('LoginPanel', () => {
   const defaultProps = { handleSnackbarUpdate: jest.fn() };

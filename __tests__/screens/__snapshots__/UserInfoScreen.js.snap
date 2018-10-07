@@ -1,21 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UserInfoScreen Snapshot 1`] = `
-<RCTSafeAreaView
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F5FCFF",
-        "flex": 1,
-        "justifyContent": "center",
-        "width": "100%",
-      },
-      undefined,
-    ]
-  }
->
-  <DarkerStatusBar />
+<SafeAreaScreen>
   <View
     style={
       Object {
@@ -56,5 +42,5 @@ exports[`UserInfoScreen Snapshot 1`] = `
   <View>
     Button
   </View>
-</RCTSafeAreaView>
+</SafeAreaScreen>
 `;

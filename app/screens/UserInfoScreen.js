@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { View, Text, StyleSheet } from 'react-native';
 import { Avatar, Button } from 'react-native-elements';
-import SafeAreaScreen from './SafeAreaScreen';
 
 import Theme from '../Theme';
+import SafeAreaScreen from './SafeAreaScreen';
 import { logout as logoutAction } from '../actions/UserActions';
 
 type Props = {
