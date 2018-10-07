@@ -47,8 +47,7 @@
   "jest": {
     "preset": "react-native",
     "setupFiles": [
-      "<rootDir>/app/testHelpers/setupTests.js",
-      "<rootDir>/app/testHelpers/mockFiles.js"
+      "<rootDir>/app/testHelpers/setupTests.js"
     ],
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
