@@ -1,21 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginScreen Snapshot with isShowRegisterPanel false 1`] = `
-<RCTSafeAreaView
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F5FCFF",
-        "flex": 1,
-        "justifyContent": "center",
-        "width": "100%",
-      },
-      undefined,
-    ]
-  }
->
-  <DarkerStatusBar />
+<SafeAreaScreen>
   <LoginPanel
     handleSnackbarUpdate={[Function]}
   />
@@ -53,25 +39,11 @@ exports[`LoginScreen Snapshot with isShowRegisterPanel false 1`] = `
     textMessage=""
     visible={false}
   />
-</RCTSafeAreaView>
+</SafeAreaScreen>
 `;
 
 exports[`LoginScreen Snapshot with isShowRegisterPanel true ans isShowSnackbar true 1`] = `
-<RCTSafeAreaView
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F5FCFF",
-        "flex": 1,
-        "justifyContent": "center",
-        "width": "100%",
-      },
-      undefined,
-    ]
-  }
->
-  <DarkerStatusBar />
+<SafeAreaScreen>
   <RegisterPanel />
   <View>
     <View
@@ -107,5 +79,5 @@ exports[`LoginScreen Snapshot with isShowRegisterPanel true ans isShowSnackbar t
     textMessage=""
     visible={true}
   />
-</RCTSafeAreaView>
+</SafeAreaScreen>
 `;
