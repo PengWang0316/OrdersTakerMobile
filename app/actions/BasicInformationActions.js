@@ -5,7 +5,7 @@ import { API_FETCH_BASIC_INFORMATION } from './ApiUrls';
 
 const fetchInformationSccuess = basicInformation => ({
   type: FETCH_BASIC_INFORMATION_SUCCESS,
-  basicInformation
+  basicInformation,
 });
 
 export const fetchBasicInformation = () => dispatch => axios.get(API_FETCH_BASIC_INFORMATION)
