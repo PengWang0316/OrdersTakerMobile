@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { View, Text } from 'react-native';
-import { Button, Icon } from 'react-native-elements';
+import { SocialIcon } from 'react-native-elements';
 
 import styles from './Styles';
-import Theme from '../../Theme';
+// import Theme from '../../Theme';
 
 export const SocialLoginPanel = () => (
   <Fragment>
@@ -11,7 +11,7 @@ export const SocialLoginPanel = () => (
       <Text style={styles.title}>Social Login</Text>
     </View>
     <View>
-      <Button
+      {/* <Button
         buttonStyle={[styles.loginButton, styles.facebookBtn]}
         title="Sign in with Facebook"
         icon={(
@@ -21,11 +21,16 @@ export const SocialLoginPanel = () => (
             color={Theme.primary.contrastText}
           />
         )}
+      /> */}
+      <SocialIcon
+        type="facebook"
+        title="Sign in With FaceBook"
+        button
       />
     </View>
 
     <View>
-      <Button
+      {/* <Button
         buttonStyle={[styles.loginButton, styles.googleBtn]}
         title="Sign in with Google"
         icon={(
@@ -35,6 +40,11 @@ export const SocialLoginPanel = () => (
             color={Theme.primary.contrastText}
           />
         )}
+      /> */}
+      <SocialIcon
+        type="google-plus-official"
+        title="Sign in With Google"
+        button
       />
     </View>
   </Fragment>

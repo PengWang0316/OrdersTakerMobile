@@ -4,8 +4,7 @@ import renderer from 'react-test-renderer';
 import { SocialLoginPanel } from '../../app/components/SocialLoginPanel/SocialLoginPanel';
 
 jest.mock('react-native-elements', () => ({
-  Button: () => 'Button',
-  Icon: () => 'Icon',
+  SocialIcon: () => 'SocialIcon',
 }));
 
 describe('SocialLoginPanel Test', () => {

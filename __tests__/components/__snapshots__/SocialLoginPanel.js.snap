@@ -17,10 +17,10 @@ Array [
     </Text>
   </View>,
   <View>
-    Button
+    SocialIcon
   </View>,
   <View>
-    Button
+    SocialIcon
   </View>,
 ]
 `;
