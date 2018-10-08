@@ -8,7 +8,9 @@ This app is built by React Native and can be installed on both Android and IOS.
 ### Simple architecture explanation
 
 - Front-end:
-  - React + Redux
+  - React Native + Redux
+  - React Native Elements
+  - React Navigation
 - Back-end:
   - Node js and Express
 - Database:
