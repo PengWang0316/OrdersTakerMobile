@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BannerImage Snapshot does not have basicInformation 1`] = `"View"`;
+
+exports[`BannerImage Snapshot has basicInformation 1`] = `"View"`;
