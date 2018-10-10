@@ -19,7 +19,7 @@ exports[`RegisterPanel Snapshot 1`] = `
         }
       }
     >
-      Username Login
+      Register a New User
     </Text>
   </View>
   <View

@@ -138,7 +138,7 @@ export class RegisterPanel extends Component<Props, States> {
     return (
       <View style={styles.internalContainer}>
         <View>
-          <Text style={styles.title}>Username Login</Text>
+          <Text style={styles.title}>Register a New User</Text>
         </View>
 
         <View style={styles.inputView}>
@@ -235,7 +235,7 @@ export class RegisterPanel extends Component<Props, States> {
         <View style={styles.buttonView}>
           <Button
             disabled={isSubmitted || !isReady}
-            title="LOGIN"
+            title="REGISTER"
             onPress={this.handleRegisterBtnClick}
             buttonStyle={styles.registerBtn}
           />
