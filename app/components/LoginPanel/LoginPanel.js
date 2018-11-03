@@ -8,7 +8,7 @@ import styles from './Styles';
 
 type Props = { handleSnackbarUpdate: Function, navigation: Object };
 
-export const LoginPanel = ({ handleSnackbarUpdat, navigation }: Props) => (
+export const LoginPanel = ({ handleSnackbarUpdate, navigation }: Props) => (
   <View style={styles.internalContainer}>
     <SocialLoginPanel />
 
@@ -18,7 +18,7 @@ export const LoginPanel = ({ handleSnackbarUpdat, navigation }: Props) => (
       <Divider style={styles.devider} />
     </View>
 
-    <LoginForm handleSnackbarUpdat={handleSnackbarUpdat} navigation={navigation} />
+    <LoginForm handleSnackbarUpdate={handleSnackbarUpdate} navigation={navigation} />
   </View>
 );
 export default LoginPanel;

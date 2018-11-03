@@ -27,6 +27,8 @@ exports[`LoginPanel Snapshot 1`] = `
     </Text>
     Divider
   </View>
-  <LoginForm />
+  <LoginForm
+    handleSnackbarUpdate={[MockFunction]}
+  />
 </View>
 `;
