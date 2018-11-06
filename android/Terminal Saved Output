@@ -1,0 +1,21 @@
+ PASS  __tests__/controllers/FetchCandidatesInfo.js
+
+ RUNS  __tests__/models/Candidate.js
+
+Test Suites: 1 passed, 1 of 2 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        0s, estimated 1s(node:3148) UnhandledPromiseRejectionWarning: [object Object]
+(node:3148) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This  PASS  __tests__/models/Candidate.jsinside of an async function without a catch   ● Console
+
+    console.log __tests__/models/Candidate.js:16
+      undefined
+
+
+Test Suites: 2 passed, 2 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        1.065s
+Ran all test suites.
+
+Watch Usage: Press w to show more.

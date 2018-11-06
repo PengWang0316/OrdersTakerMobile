@@ -44,7 +44,7 @@ describe('LoginForm', () => {
       emptyUser: mockEmptyUserFn,
     };
     const prevState = { isSubmitted: true };
-    expect(LoginForm.getDerivedStateFromProps(nextProps, prevState)).toEqual({ isSubmitted: false })
+    expect(LoginForm.getDerivedStateFromProps(nextProps, prevState)).toEqual({ isSubmitted: false });
     expect(mockUpdateFn).toHaveBeenCalledTimes(1);
     expect(mockUpdateFn).toHaveBeenLastCalledWith({ isShowSnackbar: true, snackbarMessage: 'Wrong username or password', snackbarBgColor: '#ff1744' });
     expect(mockEmptyUserFn).toHaveBeenCalledTimes(1);
